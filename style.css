@@ -104,3 +104,10 @@ footer a:hover{
     color: #5492ff;
 
 }
+
+.social-link a{
+    color:#e8f5ff;
+    float: right;
+    display: flex;
+    font-size: 18px;
+}
