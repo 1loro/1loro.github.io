@@ -1,17 +1,27 @@
-
-html {
+html, body {
+    height: 100%;
+    margin: 0;
     .rubik-iso-regular {
         font-family: "Rubik Iso", system-ui;
         font-weight: 400;
         font-style: normal;
-      }           
+    } 
+           
 }
 
+
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: #b2d8ff;
+    min-height: 100vh;
+}
 body{
     margin: 0;
     background-color: #b2d8ff;    
-
+    width: auto;
 }
+
 
 header{
     background-color: #0937ff;
@@ -20,7 +30,7 @@ header{
     font-family: "Madimi One", sans-serif;
     font-weight: 550;
     font-style: normal;
-    margin-bottom: 50px;
+
 }
 
 header h1{
@@ -92,14 +102,11 @@ footer{
     padding: 3rem;
     color: #e8f5ff ;
     font-family: "Montserrat", sans-serif;
-    margin: 0 auto;
-    margin-top: 50px;
-    bottom: 0;
+    margin-top: auto;
+    height: 10px; 
 }
 
-footer section{
-    float: left;
-}
+
 
 footer p{
     margin: 0;
@@ -125,21 +132,6 @@ footer a:hover{
     display: flex;
     font-size: 18px;
 }
-#pag2 {
-    background-color: #0937ff;
-    color: #e8f5ff;
-    padding: 2rem;
-    font-family: "Madimi One", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    margin-bottom: 50px;
-}
-
-#pag2 h1 {
-    font-size: 2rem;
-    text-align: center;
-}
-
 
 #pag2 {
     background-color: #0937ff;
@@ -148,7 +140,7 @@ footer a:hover{
     font-family: "Madimi One", sans-serif;
     font-weight: 550;
     font-style: normal;
-    margin-bottom: 50px;
+    margin-bottom: 82px;
     margin-top: 0px;
 }
 
@@ -158,15 +150,14 @@ footer a:hover{
     text-align: left;
 }
 
-.logo2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; /* Centrar horizontalmente */
-    text-align: left; /* Centrar el texto */
-    margin-top: 0; /* Elimina cualquier margen superior predeterminado */
+
+.logo2{
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
 }
+
 .logo2 a {
-    display: block;
     color: white;
     text-decoration: none;
     filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0)); /* Inicialmente sin sombra */
