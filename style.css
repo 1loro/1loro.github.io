@@ -125,6 +125,21 @@ footer a:hover{
     display: flex;
     font-size: 18px;
 }
+#pag2 {
+    background-color: #0937ff;
+    color: #e8f5ff;
+    padding: 2rem;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+#pag2 h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 
 #pag2 {
     background-color: #0937ff;
