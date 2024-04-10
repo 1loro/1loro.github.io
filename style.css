@@ -13,7 +13,8 @@ html, body {
 .body{
     display: flex;
     flex-direction: column;
-    background-color: #b2d8ff;
+    background: rgb(201,153,175);
+    background: radial-gradient(circle, rgba(201,153,175,1) 0%, rgba(255,224,255,1) 0%, rgba(224,232,255,1) 100%);
     min-height: 100vh;
 }
 body{
@@ -24,7 +25,7 @@ body{
 
 
 header{
-    background-color: #0937ff;
+    /*background-color: #b109ff;*/
     color: #e8f5ff;
     padding: 2rem;
     font-family: "Madimi One", sans-serif;
@@ -34,17 +35,18 @@ header{
 }
 
 header h1{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
+    color: black;
 }
 
 .container{
     width: 400px;
     margin: 0 auto ;
-    display: flex; /* Eliminar para usar en vertical*/
+    display: flex;
     justify-content: space-around;
     align-items: center; /* Eliminar para usar en vertical */
-    gap: 25px; /* Eliminar para usar en vertical*/
+    gap: 25px;  /*Eliminar para usar en vertical*/
 }
 
 
@@ -77,8 +79,8 @@ header h1{
 section article{
     transition: box-shadow 0.3s ease;
     font-family: "Montserrat", sans-serif;
-    background-color: #5492ff;
-    margin: 1rem 0;
+    background-color: #eac7f3;
+    /*margin: 1rem 0;*/
     border-radius: 0.5rem;
     padding: 0.25rem 0;
     cursor: pointer;
@@ -90,7 +92,7 @@ section article h2{
 }
 
 section article:hover{
-    box-shadow: 0 0.2rem 0.4rem #0a1b5c;
+    box-shadow: 0 0.2rem 0.4rem #af60af;
 }
 
 section article h2, section article p {
@@ -98,7 +100,8 @@ section article h2, section article p {
 }
 
 footer{
-    background-color: #09195d;
+    background-color: #c999af
+    ;
     padding: 3rem;
     color: #e8f5ff ;
     font-family: "Montserrat", sans-serif;
@@ -134,9 +137,9 @@ footer a:hover{
 }
 
 #pag2 {
-    background-color: #0937ff;
-    color: #e8f5ff;
-    padding: 5px 10px;
+    background-color: #c999af;
+    color: #ffe0ff;
+    /*padding: 5px 10px;*/
     font-family: "Madimi One", sans-serif;
     font-weight: 550;
     font-style: normal;
@@ -146,15 +149,16 @@ footer a:hover{
 
 
 #pag2 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
+    font-family:"Madimi One", sans-serif ;
 }
 
 
 .logo2{
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-bottom: 100px;
     float: left;
+    padding-right: 10px;
 }
 
 .logo2 a {
@@ -167,10 +171,195 @@ footer a:hover{
 
 
 .logo2 img {
-    width: 50px;
+    width: 80px;
 }
 
 .logo2 a:hover{
     filter: drop-shadow(0px 5px 20px #ffffff); /* Agregar sombra difuminada al hacer hover */
     transition: filter 0.3s ease;
 }
+.my-button {
+    padding: 10px 10px;
+    background-color: #e3b1c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .my-button:hover {
+    background-color: 
+    #ee93e683;
+  }
+  
+  .my-button:active {
+    background-color: #c999af;
+  }
+
+  #contenedor-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    background-color: black; /* Replace #yourColor with your desired color code */
+  }
+
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*Estilos para las secciones*/
+  header {
+
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .biografia {
+    padding: 20px;
+  }
+  
+  .carrusel {
+    padding: 20px;
+  }
+  
+  .contenedor-imagenes {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .contenedor-imagenes img {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  .logros {
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px;
+  }
+  
+  .biografia {
+    display: grid;
+    place-items: center;
+  }
+  
+  .biografia img {
+    max-width: 100%;
+  }
+
+  .carrusel{
+    display: grid;
+    place-items: center;
+  }
+  .contacto {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Madimi One", sans-serif;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family:"Madimi One", sans-serif;
+    font-size: 2rem;
+  }
+  
+  .contacto form {
+    margin-top: 20px;
+  }
+  
+  .contacto label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .contacto textarea {
+    height: 100px;
+  }
+  
+  .contacto button {
+    background-color: #c999af;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Madimi One", sans-serif;
+  }
+  
+  .contacto button:hover {
+    background-color: #333333;
+  }
+  .carta {
+    width: 800px;
+    height: 780px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .carta h1 {
+    margin-top: 0;
+    font-family: "Madimi One", sans-serif;
+  }
+  
+  .carta p {
+    text-align: justify;
+  }
+  
+  .carta h3 {
+    margin-top: 20px;
+    font-family: "Madimi One", sans-serif;
+  }
+  
+  .carta ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .carta li {
+    padding: 5px;
+  }
+  
+  
