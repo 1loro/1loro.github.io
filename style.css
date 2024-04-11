@@ -343,6 +343,9 @@ body {
     margin-top: 0;
     font-family: "Madimi One", sans-serif;
   }
+  .faker h2{
+    color: rgb(41, 40, 40);
+  }
   
   .carta p {
     text-align: justify;
