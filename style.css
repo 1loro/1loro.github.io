@@ -72,7 +72,7 @@ header h1{
 }
 
 .logo a:hover{
-    filter: drop-shadow(0px 5px 20px #ffffff); /* Agregar sombra difuminada al hacer hover */
+    filter: drop-shadow(0px 5px 10px #ffffff); /* Agregar sombra difuminada al hacer hover */
     transition: filter 0.3s ease;
 }
 
@@ -92,7 +92,7 @@ section article h2{
 }
 
 section article:hover{
-    box-shadow: 0 0.2rem 0.4rem #af60af;
+    box-shadow: 0 0.2rem 0.4rem #ddb6dd;
 }
 
 section article h2, section article p {
@@ -125,7 +125,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #5492ff;
+    color: #deaeeb;
 
 }
 
@@ -175,7 +175,7 @@ footer a:hover{
 }
 
 .logo2 a:hover{
-    filter: drop-shadow(0px 5px 20px #ffffff); /* Agregar sombra difuminada al hacer hover */
+    filter: drop-shadow(0px 0px 5px #ffffff); /* Agregar sombra difuminada al hacer hover */
     transition: filter 0.3s ease;
 }
 .my-button {
@@ -202,8 +202,45 @@ footer a:hover{
     justify-content: center;
     align-items: center;
   }
-  .navbar {
-    background-color: black; /* Replace #yourColor with your desired color code */
+.navbar {
+    background-color:  #c999af;
+    padding-top: 0; /* Modificado /
+    padding-bottom: 0; / Modificado */
+  }
+
+  .navbar-toggler {
+      border: none;
+      padding: 0;
+  }
+
+  .navbar-nav .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+  }
+
+  .nav-link, .navbar-toggler {
+      height: 40px; 
+      display: flex;
+      align-items: center;
+  }
+
+  .nav, .navbar-nav, .navbar-toggler, .nav-link {
+      margin: 0;
+  }
+
+
+
+  .collapse:not(.show) {
+      display: none;
+  }
+
+  @media (max-width: 991px) {
+      .navbar-collapse {
+          position: absolute;
+          top: 100%; 
+          right: 0;
+          background-color: #c999af; 
+      }
   }
 
 /*Estilos generales*/
@@ -395,7 +432,7 @@ body {
   .articulo {
     width: 30%;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     padding: 20px;
     text-align: center;
     border-radius: 0.5rem;
@@ -443,8 +480,9 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     text-align: center;
+    border-radius: 0.5rem;
   }
   
   .confirmacion-carrito h2 {
@@ -495,7 +533,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     text-align: center;
     border-radius: 0.5rem;
   }
@@ -550,3 +588,108 @@ body {
       grid-template-columns: 1fr;
     }
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px; /* Space between columns */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Madimi One", sans-serif;
+    width: 100%;
+}
+
+.image {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.perfil, .competitivo, .stats {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.perfil img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.nav.stats {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.nav-list-stats {
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+}
+
+.nav-list-stats li {
+  display: inline-block; 
+  padding: 0.5em 1em;
+  margin-right: 1em; 
+}
+
+.carousel {
+  margin: 0 auto;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black; 
+}
+.stats table {
+  width: 100%; /* Make the table fit its container */
+  border-collapse: collapse; /* Remove default table borders */
+}
+
+.stats th, .stats td, .competitivo td, .competitivo th {
+  border: 1px solid #ccc; /* Add borders to each cell */
+  padding: 5px 10px; /* Add some padding for readability */
+  text-align: center; /* Center the text in each cell */
+}
