@@ -50,7 +50,45 @@
             
 
         </header>
-            <h1>Zeus</h1>
+        <div class="confirmacion-carrito">
+          <h2>Tu polera se ha añadido al carrito</h2>
+          <p>¡Gracias por tu compra!</p>
+          <p>Para completar tu pedido, ingresa tus datos de envío:</p>
+          
+          <form action="#" method="post">  <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <br>
+            <label for="codigo_postal">Código postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required>
+            <br>
+            <br>
+            <button type="submit" style="border-radius: 0.5rem;">Enviar datos de envío</button>
+          </form>
+          
+          <script>
+            const form = document.querySelector("form");
+          
+            form.addEventListener("submit", function(event) {
+              event.preventDefault(); 
+          
+
+              console.log("Nombre:", document.getElementById("nombre").value);
+              console.log("Dirección:", document.getElementById("direccion").value);
+              console.log("Ciudad:", document.getElementById("ciudad").value);
+              console.log("Código postal:", document.getElementById("codigo_postal").value);
+          
+
+              window.location.href = "envio.html";
+            });
+          </script>
+        </div>
+        
             
             <div>
               <p></p>

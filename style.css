@@ -215,6 +215,7 @@ body {
   
   h1, h2 {
     font-weight: bold;
+    
   }
   
   p {
@@ -285,6 +286,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: "Madimi One", sans-serif;
+    width: 50%;
+    margin: 0 auto;
   }
   
   .contacto h2 {
@@ -343,9 +346,6 @@ body {
     margin-top: 0;
     font-family: "Madimi One", sans-serif;
   }
-  .faker h2{
-    color: rgb(41, 40, 40);
-  }
   
   .carta p {
     text-align: justify;
@@ -364,5 +364,189 @@ body {
   .carta li {
     padding: 5px;
   }
+  .faker h2{
+    color: rgb(41, 40, 40);
+  }
+  .contenedor-ecommerce {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
   
+  .titulo-seccion {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
   
+  .titulo-seccion h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .articulo {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  
+  .articulo img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .articulo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .articulo p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .articulo .precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .articulo .boton-comprar {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.6rem;
+  }
+  
+  .articulo .boton-comprar:hover {
+    background-color: #333;
+  }
+  .confirmacion-carrito {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .confirmacion-carrito h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .confirmacion-carrito p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .confirmacion-carrito form {
+    margin-top: 20px;
+  }
+  
+  .confirmacion-carrito label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .confirmacion-carrito input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .confirmacion-carrito button {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .confirmacion-carrito button:hover {
+    background-color: #333;
+  }
+  
+  .compra-exitosa {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  
+  .compra-exitosa h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .compra-exitosa p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .compra-exitosa button {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .compra-exitosa button:hover {
+    background-color: #333;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .contacto {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Madimi One", sans-serif;
+    width: 80%;
+  }
+  
+  .imagen {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
