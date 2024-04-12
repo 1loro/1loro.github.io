@@ -50,32 +50,6 @@ header h1{
 }
 
 
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centrar horizontalmente */
-    text-align: center; /* Centrar el texto */
-}
-.logo a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0)); /* Inicialmente sin sombra */
-    transition: filter 0.5s ease; /* Transición de la sombra difuminada */
-}
-
-
-
-.logo img {
-    width: 50px;
-}
-
-.logo a:hover{
-    filter: drop-shadow(0px 5px 10px #ffffff); /* Agregar sombra difuminada al hacer hover */
-    transition: filter 0.3s ease;
-}
-
 section article{
     transition: box-shadow 0.3s ease;
     font-family: "Montserrat", sans-serif;
@@ -158,7 +132,7 @@ footer a:hover{
 .logo2{
     padding-bottom: 100px;
     float: left;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .logo2 a {
@@ -172,6 +146,7 @@ footer a:hover{
 
 .logo2 img {
     width: 80px;
+    padding-left: 10px;
 }
 
 .logo2 a:hover{
@@ -452,7 +427,7 @@ body {
   
   .articulo p {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   .articulo .precio {
@@ -590,9 +565,9 @@ body {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 20px; /* Space between columns */
-    align-items: center; /* Align items vertically in the center */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    align-items: center; 
 }
 
 .contact {
@@ -610,7 +585,7 @@ body {
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* One column for small screens */
+        grid-template-columns: 1fr; 
     }
 }
 .contenedor {
@@ -684,12 +659,65 @@ li {
     color: black; 
 }
 .stats table {
-  width: 100%; /* Make the table fit its container */
-  border-collapse: collapse; /* Remove default table borders */
+  width: 100%; 
+  border-collapse: collapse; 
 }
 
 .stats th, .stats td, .competitivo td, .competitivo th {
-  border: 1px solid #ccc; /* Add borders to each cell */
-  padding: 5px 10px; /* Add some padding for readability */
-  text-align: center; /* Center the text in each cell */
+  border: 1px solid #ccc; 
+  padding: 5px 10px; 
+  text-align: center; 
+}
+.carrito {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 0.6rem;
+  margin-bottom: 30px;
+}
+
+.carrito h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.producto img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cantidad {
+  width: 50px;
+  text-align: center;
+}
+
+.btn-comprar {
+  background-color: #000;
+  display: block;
+  margin: 20px auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.6rem;
+  text-decoration: none;
+}
+
+.a {
+  color: #000;
 }
