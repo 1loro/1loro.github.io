@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +22,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <main>
         <header id="pag2">
-          
             <div class="logo2">
                 <a href="index.html">
                     <img src="img/kitty.png" alt="Este es el logo xD">
@@ -42,13 +40,11 @@
                       <a class="nav-link" href="contacto.html">Contacto</a>
                       <a class="nav-link" href="merch.html">Merch</a>
                       <a class="nav-link" href="about.html">Sobre nosotros</a>
-                      <a class="nav-link" href="productos.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                      <a class="nav-link" href="carro.html"><i class="fas fa-shopping-cart"></i> Carrito (<span id="cartCount">0</span>)</a>
                     </div>
                   </div>
                 </div>
               </nav>
-            
-
         </header>
         <div class="contenedor-ecommerce">
           <div class="titulo-seccion">
@@ -56,41 +52,28 @@
           </div>
           <div class="articulos">
             <article class="articulo">
-              <img src="img/geng.png" alt="geng">
+              <img src="img/geng.png" alt="Polera Gen G">
               <h3>Polera Gen G</h3>
               <p>Nuestras poleras son 100% algodon</p>
               <p>$ 19.990</p>
-              <a href="carrogeng.html">
-              <button class="boton-comprar">Comprar</button>
-              </a>
+              <button class="btn-comprar" onclick="addToCart('Polera Gen G', 19990, 'img/geng.png')">Añadir al carrito</button>
             </article>
             <article class="articulo">
-              <img src="img/t1.png" alt="t1">
+              <img src="img/t1.png" alt="Polera T1">
               <h3>Polera T1</h3>
               <p>Nuestras poleras son 100% algodon</p>
               <p>$ 19.990</p>
- 
-              <a href="carrot1.html">
-                <button class="boton-comprar">Comprar</button>
-                </a>
+              <button class="btn-comprar" onclick="addToCart('Polera T1', 19990, 'img/t1.png')">Añadir al carrito</button>
             </article>
             <article class="articulo">
-              <img src="img/g2.png" alt="g2">
+              <img src="img/g2.png" alt="Polera G2">
               <h3>Polera G2</h3>
               <p>Nuestras poleras son 100% algodon</p>
               <p>$ 19.990</p>
-              
-              <a href="carrog2.html">
-                <button class="boton-comprar">Comprar</button>
-                </a>
+              <button class="btn-comprar" onclick="addToCart('Polera G2', 19990, 'img/g2.png')">Añadir al carrito</button>
             </article>
-            </div>
+          </div>
         </div>
-        
-            <div>
-              <p></p>
-              
-            </div>
     </main>
     <footer id="footer2">
         <div class="footer-links">
@@ -101,5 +84,10 @@
         </div>
         <p>Fanduu © 2024</p>
     </footer>
+    <div id="notification">
+        Producto agregado correctamente
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

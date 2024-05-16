@@ -42,7 +42,7 @@
                       <a class="nav-link" href="contacto.html">Contacto</a>
                       <a class="nav-link" href="merch.html">Merch</a>
                       <a class="nav-link" href="about.html">Sobre nosotros</a>
-                      <a class="nav-link" href="productos.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                      <a class="nav-link" href="carro.html"><i class="fas fa-shopping-cart"></i> Carrito (<span id="cartCount">0</span>)</a>
                     </div>
                   </div>
                 </div>
@@ -53,11 +53,33 @@
         
 
     <div class="contenedor">
-        <section class="perfil">
-            <img src="img/zeus.png" alt="Foto de Jugador">
+      <section class="perfil">
+        <div id="carouselExample" class="carousel slide" style="width: 200px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/zeus.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/zeus2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/zeus3.png" class="d-block w-100" alt="...">
+            </div>
+
+
+          </div>
+          <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
             <h2>ZEUSSSS</h2>
             <ul>
-                <li>Nombre: -</li>
+                <li>Nombre: 	Choi Woo-je</li>
                 <li>País: Corea del Sur</li>
                 <li>Rol: Top Laner</li>
             </ul>
@@ -67,13 +89,13 @@
             <h2>Competitivo</h2>
             <ul>
                 <li>Equipo: T1</li>
-                <li>Contrato Expira: -</li>
+                <li>Contrato Expira: 2026-11-16</li>
                 <li>ID Competitivo: Zeus</li>
                 <li>ID Soloqueue:</li>
                     <ul>
-                        <li>KR: -</li>
-                        <li>EUW: -</li>
-                        <li>NA: -</li>
+                        <li>KR: 2U35</li>
+                        <li>EUW: Wooje</li>
+                        <li>NA: God Thunder Zeus</li>
                     </ul>
             </ul>
         </section>
@@ -90,10 +112,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td>266W - 121L</td>
+                  <td>68.7%</td>
+                  <td>3.2</td>
+                  <td>57.2%</td>
                 </tr>
               </tbody>
             </table>
@@ -115,5 +137,6 @@
         </div>
         <p>Fanduu © 2024</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

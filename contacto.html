@@ -42,7 +42,7 @@
                       <a class="nav-link" href="contacto.html">Contacto</a>
                       <a class="nav-link" href="merch.html">Merch</a>
                       <a class="nav-link" href="about.html">Sobre nosotros</a>
-                      <a class="nav-link" href="productos.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                      <a class="nav-link" href="carro.html"><i class="fas fa-shopping-cart"></i> Carrito (<span id="cartCount">0</span>)</a>
                     </div>
                   </div>
                 </div>
@@ -52,23 +52,22 @@
         </header>
         <div class="grid-container">
           <div class="imagen">
-            <img src="img/good (1).png" alt="">
-
+              <img src="img/good (1).png" alt="">
           </div>
           <div class="contacto">
-            <h2>Contacto</h2>
-            <form action="#">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre">
-              <label for="correo">Correo electrónico:</label>
-              <input type="email" id="correo" name="correo">
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje"></textarea>
-              <button type="submit">Enviar</button>
-            </form>
+              <h2>Contacto</h2>
+              <form id="contactForm">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo" required>
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea>
+                  <button type="submit">Enviar</button>
+              </form>
+              <div id="errorMessage" style="color: red;"></div>
           </div>
-         
-        </div>
+      </div>
         
             
             <div>
@@ -85,5 +84,6 @@
         </div>
         <p>Fanduu © 2024</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
