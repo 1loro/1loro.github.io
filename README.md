@@ -1,5 +1,5 @@
-# Proyecto html - css
-- Blog básico para alimentar mi propio aprendizajeje.
+# Proyecto html - css - js
+- Blog básico
   
 ![readme](https://github.com/1loro/1loro.github.io/assets/134718943/8f9d2cf0-98dc-4e73-a840-589a6df4c429)
 ## Author
