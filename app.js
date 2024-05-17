@@ -33,7 +33,6 @@ function updateCartDisplay() {
                     ${item.quantity}
                     <button class="btn-increase" onclick="changeQuantity('${item.name}', 1)">+</button>
                 </p>
-                
             `;
             cartItemsContainer.appendChild(itemElement);
             totalPrice += item.price * item.quantity;
@@ -41,7 +40,7 @@ function updateCartDisplay() {
 
         document.getElementById('totalPrice').innerText = totalPrice.toLocaleString();
 
-        // habilitar / deshabilitar buton
+        // habilitar / deshabilitar botón
         if (cart.length === 0) {
             checkoutButton.disabled = true;
             checkoutButton.innerText = "Carrito Vacío";
@@ -49,8 +48,8 @@ function updateCartDisplay() {
             checkoutButton.style.cursor = "not-allowed";
         } else {
             checkoutButton.disabled = false;
-            checkoutButton.innerText = "Comprar";
-            checkoutButton.style.backgroundColor = "#black";
+            checkoutButton.innerText = "Proceder al Pago";
+            checkoutButton.style.backgroundColor = "black";
             checkoutButton.style.cursor = "pointer";
         }
     }
@@ -90,9 +89,13 @@ function checkout() {
         return;
     }
 
-    alert("Gracias por su compra. Total a pagar: $" + document.getElementById('totalPrice').innerText);
+    // Vaciamos el carrito y actualizamos la visualización
     cart = [];
     updateCartDisplay();
+    localStorage.removeItem('cart');
+
+    // Redirigimos a la página de datos de envío
+    window.location.href = 'datos_envio.html';
 }
 
 function showNotification(message) {
@@ -121,7 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('beforeunload', () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 });
-//validacion del contact xd
+
+// validación del contacto xd
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     var nombre = document.getElementById('nombre').value.trim();
     var correo = document.getElementById('correo').value.trim();
@@ -140,7 +144,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 function isValidEmail(email) {
-    // funcion validacion de correo, la saqe de google
+    // función validación de correo, la saqué de google
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
