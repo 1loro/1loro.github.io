@@ -5,7 +5,7 @@ Tarea                                                                           
 1. ¿Está claro y explícito quién o quiénes son los responsables del sitio?              | [✓]
 2. ¿se describe el propósito de la organización que promueve el sitio?                  | [✓]
 3. ¿La información en este sitio es veraz?                                              | [✓]
-4. ¿Existe medio de contacto? 
+4. ¿Existe medio de contacto?                                                           | [✓]
 
 - - - - - - - - - Actualizacion - - - - - - - - -
 
