@@ -1,7 +1,8 @@
 # Proyecto html - css - js
 - Blog básico
   
-![readme](https://github.com/1loro/1loro.github.io/assets/134718943/8f9d2cf0-98dc-4e73-a840-589a6df4c429)
+![readme]![image](https://github.com/1loro/1loro.github.io/assets/134718943/187a7565-e1c8-488b-9741-9b49c8d45db1)
+
 ## Author
 
 - [@1loro](https://www.github.com/1loro)
