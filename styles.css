@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.chapter {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.chapter h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.chapter-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.chapter-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.fixed-size {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
