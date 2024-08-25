@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Inicio</title>
+    <link rel="icon" href="img/logo.png">
+    
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293038] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <a href="index.html">
+                <img src="/img/logo.png" alt="Mi Logo" style="width: 100%; height: auto;" />
+              </a>
+            </div>
+            
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Lorenzo Teixido</h2>
+          </div>
+
+
+            <div class="flex flex-1 justify-end gap-8">
+                <div class="flex items-center gap-9">
+                  <a class="text-white text-sm font-medium leading-normal" href="index.html">Inicio</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="build.html">Sobre mí</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="build.html">CV</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="build.html">Portafolio</a>
+                  <a class="text-white text-sm font-medium leading-normal" href="build.html">Contacto</a>
+                </div>
+                <a href="https://www.linkedin.com/in/lorenzoteixido/" target="_blank" rel="noopener noreferrer">
+                  <button
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#293038] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                  >
+                    <div class="text-white">
+                      <img src="img/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+                    </div>
+                  </button>
+                </a>
+    
+              </div>
+          
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Vuelve pronto</h1>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">Esta página está en construcción. Por favor, regresa pronto.</p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("img/build.gif");'
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
