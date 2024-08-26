@@ -1,0 +1,137 @@
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+      <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      />
+      <link rel="stylesheet" href="style.css">
+      <title>Sobre mí</title>
+      <link rel="icon" href="img/logo.png">
+      
+
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+      <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293038] px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <a href="index.html">
+                  <img src="/img/logo.png" alt="Mi Logo" style="width: 100%; height: auto;" />
+                </a>
+              </div>
+              
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] typing-effect">
+                Lorenzo Teixido
+              </h2>
+            </div>
+            
+            <style>
+              .typing-effect {
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: .15em solid #00aaff; 
+                animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+              }
+            
+              @keyframes typing {
+                from { width: 0; }
+                to { width: 11ch; }
+              }
+            
+              @keyframes blink-caret {
+                from, to { border-color: transparent; }
+                50% { border-color: #00aaff; }
+              }
+            </style>
+              
+              
+            
+            <div class="flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-white text-sm font-medium leading-normal" href="index.html">Inicio</a>
+                <a class="text-white text-sm font-medium leading-normal" href="sobremi.html">Sobre mí</a>
+                <a class="text-white text-sm font-medium leading-normal" href="https://drive.google.com/file/d/1LeQZ375rMtiH02yrkoICCtzLuQbOanwF/view?usp=sharing">CV</a>
+                <a class="text-white text-sm font-medium leading-normal" href="test.html">Portafolio</a>
+                <a class="text-white text-sm font-medium leading-normal" href="build.html">Contacto</a>
+              </div>
+              <a href="https://www.linkedin.com/in/lorenzoteixido/" target="_blank" rel="noopener noreferrer">
+                <button
+                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#293038] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                >
+                  <div class="text-white">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+                  </div>
+                </button>
+              </a>
+
+            </div>
+          </header>
+          <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+              <div class="@container">
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/sobremi.gif");'
+                  >
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1
+                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      >
+                        ¿Quien es Lorenzo?
+                      </h1>
+                      <br>
+                      <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                        Es un estudiante de segundo año de Ingeniería en Informática con una sólida base en programación, lo que le permite abordar problemas complejos con facilidad. Se destaca por su habilidad para resolver problemas de manera eficiente y disfruta trabajando en equipo, donde su capacidad para colaborar y comunicarse es fundamental para alcanzar los objetivos.
+                    </h2>
+                    
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                        Además, es un apasionado jugador de juegos en línea, especialmente League of Legends, donde aplica su capacidad estratégica y de toma de decisiones. Siempre está en busca de nuevos conocimientos, lo que lo mantiene en un constante proceso de aprendizaje y mejora continua.
+                    </h2>
+                    
+                    </div>
+                    <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10 px-4 py-10 @container">
+                
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
+                    
+                    <div class="flex flex-col gap-1">
+                      <h2 class="text-white text-base font-bold leading-tight">Nombre</h2>
+                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Lorenzo Esteban Teixido Fuentes</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h2 class="text-white text-base font-bold leading-tight">Edad</h2>
+                        <p class="text-[#9dabb8] text-sm font-normal leading-normal">22 años</p>
+                      </div>
+                      <div class="flex flex-col gap-1">
+                        <h2 class="text-white text-base font-bold leading-tight">Ciudad</h2>
+                        <p class="text-[#9dabb8] text-sm font-normal leading-normal">Santiago, Chile</p>
+                      </div>
+                      <div class="flex flex-col gap-1">
+                        <h2 class="text-white text-base font-bold leading-tight">Email</h2>
+                        <p class="text-[#9dabb8] text-sm font-normal leading-normal">loremzhitto@gmail.com</p>
+                      </div>
+                  </div>
+
+            </div>
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </body>
+    
+  </html>

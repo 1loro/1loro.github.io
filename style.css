@@ -1,5 +1,5 @@
 #modal-container {
-  display: none;
+  display: none; /* Ocultar el modal por defecto */
 }
 
 .modal-content {
@@ -12,14 +12,14 @@
   cursor: pointer;
 }
 .custom-text {
-  color: #9DABB8; 
+  color: #9DABB8; /* Cambia el color del texto */
   font-family: 'Inter', 'Noto Sans', sans-serif;
-  font-size: 14px;
+  font-size: 14px; /* Cambia el tamaño de la fuente */
 }
 
 .swiper-container {
   width: 100%;
-  height: 400px; 
+  height: 400px; /* Ajusta este valor según tus necesidades */
 }
 .swiper-slide {
   display: flex;
@@ -32,24 +32,25 @@
   object-fit: contain;
 }
 .titulo_project{
-  color: #ffffff; 
+  color: #ffffff; /* Cambia el color del texto */
   font-family: 'Inter', 'Noto Sans', sans-serif;
-  font-size: 16px; 
+  font-size: 16px; /* Cambia el tamaño de la fuente */
 }
 .flex a {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y el resplandor */
 }
 
 .flex a:hover {
-  color: #00aaff; 
-  text-shadow: 0 0 8px rgba(0, 170, 255, 0.6); 
+  color: #00aaff; /* Cambia el color del texto cuando se pasa el ratón */
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.6); /* Agrega un resplandor azul alrededor del texto */
 }
 
 button {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color del texto y el resplandor */
 }
 
 button:hover {
-  color: #00aaff; 
-  text-shadow: 0 0 5px rgba(0, 170, 255, 0.8); 
+  color: #00aaff; /* Cambia el color del texto al pasar el ratón */
+  text-shadow: 0 0 5px rgba(0, 170, 255, 0.8); /* Agrega un resplandor azul alrededor del texto */
 }
+
