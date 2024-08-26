@@ -241,11 +241,35 @@
           },
           { 
             title: "Proyecto 2", 
-            description: "Descripción detallada del Proyecto 2...",
-            images: ["img/2.gif", "img/project2-detail1.jpg", "img/project2-detail2.jpg"],
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nulla provident culpa sint modi omnis at corrupti eveniet labore voluptatibus aspernatur. Accusantium eligendi atque, corrupti excepturi ducimus reprehenderit maxime accusamus?",
+            images: ["img/2.gif"],
             codeUrl: "https://github.com/tuusuario/proyecto2"
           },
-          // ... Añade datos para los demás proyectos
+          { 
+            title: "Proyecto 3", 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nulla provident culpa sint modi omnis at corrupti eveniet labore voluptatibus aspernatur. Accusantium eligendi atque, corrupti excepturi ducimus reprehenderit maxime accusamus?",
+            images: ["img/6.gif"],
+            codeUrl: "https://github.com/tuusuario/proyecto2"
+          },
+          { 
+            title: "Proyecto 4", 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nulla provident culpa sint modi omnis at corrupti eveniet labore voluptatibus aspernatur. Accusantium eligendi atque, corrupti excepturi ducimus reprehenderit maxime accusamus?",
+            images: ["img/4.gif"],
+            codeUrl: "https://github.com/tuusuario/proyecto2"
+          },
+          { 
+            title: "Proyecto 5", 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nulla provident culpa sint modi omnis at corrupti eveniet labore voluptatibus aspernatur. Accusantium eligendi atque, corrupti excepturi ducimus reprehenderit maxime accusamus?",
+            images: ["img/1.gif"],
+            codeUrl: "https://github.com/tuusuario/proyecto2"
+          },
+          { 
+            title: "Proyecto 6", 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nulla provident culpa sint modi omnis at corrupti eveniet labore voluptatibus aspernatur. Accusantium eligendi atque, corrupti excepturi ducimus reprehenderit maxime accusamus?",
+            images: ["img/3.gif"],
+            codeUrl: "https://github.com/tuusuario/proyecto2"
+          },
+         
         ];
     
         function openModal(projectIndex) {
@@ -253,10 +277,10 @@
           modalTitle.textContent = project.title;
           modalDescription.textContent = project.description;
           
-          // Limpiar imágenes anteriores
+          
           modalImages.innerHTML = '';
           
-          // Añadir nuevas imágenes
+          
           project.images.forEach(img => {
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
@@ -264,13 +288,17 @@
             modalImages.appendChild(slide);
           });
     
-          // Inicializar o actualizar Swiper
+          
           if (swiper) {
             swiper.destroy();
           }
           swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
             pagination: {
               el: '.swiper-pagination',
+              clickable: true,
             },
             navigation: {
               nextEl: '.swiper-button-next',
@@ -284,7 +312,7 @@
           modal.classList.add('flex');
         }
     
-        // Añadir event listeners a los botones "Expandir"
+       
         document.querySelectorAll('.flex.min-w-\\[84px\\]').forEach((btn, index) => {
           btn.addEventListener('click', () => openModal(index));
         });
@@ -294,7 +322,7 @@
           modal.classList.remove('flex');
         });
     
-        // Cerrar el modal si se hace clic fuera de él
+        
         modal.addEventListener('click', (e) => {
           if (e.target === modal) {
             modal.classList.add('hidden');
