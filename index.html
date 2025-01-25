@@ -1,5 +1,11 @@
   <html>
     <head>
+      <style>
+       
+        body {
+          cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%2376CFFF" stroke="%23000000" stroke-width="1.5"></circle></svg>'), auto; /* Cambia 'img/cursor.png' por la ruta de tu imagen */
+        }
+      </style>
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
       <link
         rel="stylesheet"
@@ -19,18 +25,27 @@
         <div class="layout-container flex h-full grow flex-col">
           <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293038] px-10 py-3">
             <div class="flex items-center gap-4 text-white">
-              <div class="size-4">
+              <div class="size-10">
                 <a href="index.html">
-                  <img src="/img/logo.png" alt="Mi Logo" style="width: 100%; height: auto;" />
+                  <img src="/img/logo.png" alt="Mi Logo" class="logo" style="width: 100%; height: auto;" />
                 </a>
               </div>
               
-              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] typing-effect">
-                Lorenzo Teixido
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                <a href="index.html" class="text-white typing-effect">
+                  Lorenzo Teixido
+                </a>
               </h2>
             </div>
             
             <style>
+              .logo {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.2);
+  }
               .typing-effect {
                 display: inline-block;
                 overflow: hidden;
@@ -48,21 +63,29 @@
                 from, to { border-color: transparent; }
                 50% { border-color: #00aaff; }
               }
+              .linkedin-button {
+               transition: transform 0.3s ease-in-out; 
+              }
+
+              .linkedin-button:hover {
+              transform: scale(1.15); 
+              }
             </style>
+            
               
               
             
             <div class="flex flex-1 justify-end gap-8">
               <div class="flex items-center gap-9">
                 <a class="text-white text-sm font-medium leading-normal" href="index.html">Inicio</a>
-                <a class="text-white text-sm font-medium leading-normal" href="sobremi.html">Sobre mí</a>
+                
                 <a class="text-white text-sm font-medium leading-normal" href="https://drive.google.com/file/d/1oQG8fpKU67aC2qpQGIST3DO-q5XE2ebe/view?usp=sharing">CV</a>
-                <a class="text-white text-sm font-medium leading-normal" href="test.html">Proyectos</a>
-                <a class="text-white text-sm font-medium leading-normal" href="build.html">Contacto</a>
+                
+                <a class="text-white text-sm font-medium leading-normal" href="contacto.html">Contacto</a>
               </div>
               <a href="https://www.linkedin.com/in/lorenzoteixido/" target="_blank" rel="noopener noreferrer">
                 <button
-                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#293038] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#293038] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 linkedin-button"
                 >
                   <div class="text-white">
                     <img src="img/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
@@ -78,7 +101,7 @@
                 <div class="@[480px]:p-4">
                   <div
                     class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/fondo.gif");'
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/sobremi.gif");'
                   >
                     <div class="flex flex-col gap-2 text-left">
                       <h1
@@ -91,41 +114,14 @@
                       </h2>
                     </div>
                     <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
-                      <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
-                        <div
-                          class="text-[#9dabb8] flex border border-[#3c4753] bg-[#1c2126] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
-                          data-icon="MagnifyingGlass"
-                          data-size="20px"
-                          data-weight="regular"
-                        >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path
-                              d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                            ></path>
-                          </svg>
-                        </div>
-                        <input
-                          placeholder="Ingresa email"
-                          class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#3c4753] bg-[#1c2126] focus:border-[#3c4753] h-full placeholder:text-[#9dabb8] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                          value=""
-                        />
-                        <div class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#3c4753] bg-[#1c2126] pr-[7px]">
-                          <audio id="click-sound" src="sound.mp3"></audio>
-                          <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                          >
-                            <span class="truncate">Contactar</span>
-                          </button>
-                          
-                        </div>
-                      </div>
+                      
                     </label>
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-1 px-4 py-10 @container">
                 <h1
-                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
                 >
                   Technologies &amp; Skills
                 </h1>
@@ -153,7 +149,7 @@
                     </div>
                     <div class="flex flex-col gap-1">
                       <h2 class="text-white text-base font-bold leading-tight">Frameworks</h2>
-                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Ionic, Django, Angular, React.js</p>
+                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Django, Angular, React.js</p>
                     </div>
                   </div>
                   <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
@@ -182,108 +178,99 @@
                       <p class="text-[#9dabb8] text-sm font-normal leading-normal">Html, CSS, Tailwind</p>
                     </div>
                   </div>
-                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
-                    <div class="text-white" data-icon="MusicNote" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M176,112H152a8,8,0,0,1,0-16h24a8,8,0,0,1,0,16ZM104,96H96V88a8,8,0,0,0-16,0v8H72a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16ZM241.48,200.65a36,36,0,0,1-54.94,4.81c-.12-.12-.24-.24-.35-.37L146.48,160h-37L69.81,205.09l-.35.37A36.08,36.08,0,0,1,44,216,36,36,0,0,1,8.56,173.75a.68.68,0,0,1,0-.14L24.93,89.52A59.88,59.88,0,0,1,83.89,40H172a60.08,60.08,0,0,1,59,49.25c0,.06,0,.12,0,.18l16.37,84.17a.68.68,0,0,1,0,.14A35.74,35.74,0,0,1,241.48,200.65ZM172,144a44,44,0,0,0,0-88H83.89A43.9,43.9,0,0,0,40.68,92.37l0,.13L24.3,176.59A20,20,0,0,0,58,194.3l41.92-47.59a8,8,0,0,1,6-2.71Zm59.7,32.59-8.74-45A60,60,0,0,1,172,160h-4.2L198,194.31a20.09,20.09,0,0,0,17.46,5.39,20,20,0,0,0,16.23-23.11Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!--
-                    <div class="flex flex-col gap-1">
-                      <h2 class="text-white text-base font-bold leading-tight">Design Tools</h2>
-                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Figma</p>
-                    </div>
-                  </div>
-                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
-                    <div class="text-white" data-icon="GameController" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M176,112H152a8,8,0,0,1,0-16h24a8,8,0,0,1,0,16ZM104,96H96V88a8,8,0,0,0-16,0v8H72a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16ZM241.48,200.65a36,36,0,0,1-54.94,4.81c-.12-.12-.24-.24-.35-.37L146.48,160h-37L69.81,205.09l-.35.37A36.08,36.08,0,0,1,44,216,36,36,0,0,1,8.56,173.75a.68.68,0,0,1,0-.14L24.93,89.52A59.88,59.88,0,0,1,83.89,40H172a60.08,60.08,0,0,1,59,49.25c0,.06,0,.12,0,.18l16.37,84.17a.68.68,0,0,1,0,.14A35.74,35.74,0,0,1,241.48,200.65ZM172,144a44,44,0,0,0,0-88H83.89A43.9,43.9,0,0,0,40.68,92.37l0,.13L24.3,176.59A20,20,0,0,0,58,194.3l41.92-47.59a8,8,0,0,1,6-2.71Zm59.7,32.59-8.74-45A60,60,0,0,1,172,160h-4.2L198,194.31a20.09,20.09,0,0,0,17.46,5.39,20,20,0,0,0,16.23-23.11Z"
-                        ></path>
-                      </svg>
-                    </div>-->
-                    <div class="flex flex-col gap-1">
-                      <h2 class="text-white text-base font-bold leading-tight">Hobbies</h2>
-                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">League of legends</p>
-                    </div>
-                  </div>
+                  
                 </div>
                 
               </div>
+              <div class="flex flex-col gap-1 px-4 py-10 @container">
+                <h1
+                  class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                >
+                  Servicios
+                </h1>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
+                    
+                    <div class="flex flex-col gap-1">
+                      <h2 class="text-white text-base font-bold leading-tight">Full Stack</h2>
+                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Cuento con experiencia en el desarrollo de aplicaciones web, abarcando tanto frontend como backend. En el frontend, me especializo en interfaces intuitivas y responsivas utilizando HTML, CSS, JavaScript y frameworks como React o Angular. En el backend, domino lenguajes como Python, Java y Node.js, además de bases de datos SQL y NoSQL.
+
+                        Tengo experiencia integrando APIs, optimizando rendimiento, y garantizando escalabilidad y seguridad. Trabajo en todas las etapas del desarrollo, ofreciendo soluciones eficientes y adaptadas a las necesidades del proyecto.</p>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                
+              </div>
+
               
-
-              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Servicios</h2>
               <div class="flex flex-col gap-10 px-4 py-10 @container">
                 
-                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
-                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
-                    
-                    <div class="flex flex-col gap-1">
-                      <h2 class="text-white text-base font-bold leading-tight">¿Qué puedo ofrecer?</h2>
-                      <p class="text-[#9dabb8] text-sm font-normal leading-normal text-justify">
-                        Como desarrollador de software full stack, puedo ofrecer una combinación de habilidades técnicas y experiencia que abarcan tanto el desarrollo de frontend como de backend. En el frontend, tengo experiencia en crear interfaces de usuario intuitivas y responsivas utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos como React o Angular. Para el backend, domino lenguajes como Python, Java, o Node.js, junto con experiencia en el diseño y gestión de bases de datos SQL y NoSQL. También puedo integrar APIs, asegurar la escalabilidad y seguridad de las aplicaciones, y optimizar el rendimiento general del sistema. Además, soy capaz de trabajar en todas las etapas del desarrollo, desde la planificación y diseño hasta la implementación y mantenimiento, siempre buscando soluciones eficientes y sostenibles.
-                      </p>
-                    </div>
-                    
-                    
-                    
-                  </div>
+                
 
             </div>
             
-          </div>
-              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Idiomas</h2>
-              <div class="flex flex-col gap-10 px-4 py-10 @container">
-                
-                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
-                  <div class="flex flex-1 gap-3 rounded-lg border border-[#3c4753] bg-[#1c2126] p-4 flex-col">
-                    
-                    <div class="flex flex-col gap-1">
-                      <h2 class="text-white text-base font-bold leading-tight">Español</h2>
-                      <p class="text-[#9dabb8] text-sm font-normal leading-normal">Nativo</p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-white text-base font-bold leading-tight">Ingles</h2>
-                        <p class="text-[#9dabb8] text-sm font-normal leading-normal">Intermedio</p>
-                      </div>
-                    
-                  </div>
-
-            </div>
-            
-          </div>
+         
               <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Open Source Projects</h2>
               <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("img/5.gif");'
-                  ></div>
-                  <p class="text-white text-base font-medium leading-normal">Project 1</p>
-                </div>
-                <div class="flex flex-col gap-3 pb-3">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("img/2.gif");'
-                  ></div>
-                  <p class="text-white text-base font-medium leading-normal">Project 2</p>
-                </div>
-                  <div class="flex flex-col gap-3 pb-3">
-                    <div
-                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                      style='background-image: url("img/3.gif");'
-                    ></div>
-                    <p class="text-white text-base font-medium leading-normal">Project 3</p>
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative">
+                  <img src="img/tellevo.png" alt="Proyecto 1" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2">Te llevo App</h3>
+                    <p class="custom-text text-justify">
+                      Plataforma de gestión de viajes desarrollada con Django Rest Framework y Ionic. Conecta conductores y usuarios, permitiendo a los conductores gestionar viajes y a los administradores supervisar usuarios y viajes.
+                    </p>
+                    <br>
+                    <a 
+                      href="https://1loro.github.io/tellevo/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                      Ver proyecto
+                    </a>
                   </div>
+                </div>
+                
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative">
+                  <img src="img/showcase.png" alt="Proyecto 1" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2">Profile Showcase</h3>
+                    <p class="custom-text text-justify">
+                      Este proyecto es una página que muestra información sobre perfiles en línea, redes sociales y una breve presentación personal. Incluye enlaces directos a plataformas como LinkedIn, GitHub e Instagram, todo editable y de libre uso.
+                    </p>
+                    <br>
+                    <a 
+                      href="https://1loro.github.io/showcase/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                      Ver proyecto
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative">
+                  <img src="img/buscalibre.png" alt="Proyecto 1" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2">Buscalibre Scraper</h3>
+                    <p class="custom-text">
+                      Este proyecto es una herramienta de scraping diseñada para monitorear la wishlist de Buscalibre. Extrae información sobre libros y sus precios. Cuando detecta una reducción de precio, envía notificaciones personalizadas por correo electrónico.</p>
+                      <br>
+                      <a 
+                      href="https://github.com/1loro/buscalibre_scraper" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                      Ver proyecto
+                    </a></div>
+                </div>
                   
 
                 
               </div>
               
               <div class="flex px-4 py-3 justify-end">
-                <a href="test.html" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/1loro" target="_blank" rel="noopener noreferrer">
                   <button
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]"
                   >
