@@ -269,6 +269,66 @@
                 
               </div>
               
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+               
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative">
+                  <img src="img/soon.png" alt="Proyecto 1" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2" id="title">Loading...</h3>
+                    <p class="custom-text text-justify" id="description">
+                      
+                    </p>
+                    <br>
+                    <a 
+                      href="javascript:void(0);" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      id="soon-button" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-not-allowed items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#5C636A] text-white text-sm font-bold leading-normal tracking-[0.015em] pointer-events-none opacity-50 hover:bg-[#5C636A]">
+                      <span class="mr-2"></span> Soon
+                    </a>
+                  </div>
+                </div>
+              
+                
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative" style="visibility: hidden;">
+                  <img src="img/" alt="Proyecto 2" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2">Soon</h3>
+                    <p class="custom-text text-justify">
+                    Soon  
+                    </p>
+                    <br>
+                    <a 
+                       
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                      Ver proyecto
+                    </a>
+                  </div>
+                </div>
+              
+                
+                <div class="bg-[#1C2126] rounded-xl shadow-lg overflow-hidden relative" style="visibility: hidden;">
+                  <img src="img/Soon.png" alt="Proyecto 3" class="card-img w-full object-cover" />
+                  <div class="p-4 text-white">
+                    <h3 class="text-xl font-bold mb-2">Soon</h3>
+                    <p class="custom-text">
+                    Soon  
+                    </p>
+                    <br>
+                    <a 
+                      
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#293038] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                      Ver proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
               
               <div class="flex px-4 py-3 justify-end">
                 <a href="https://github.com/1loro" target="_blank" rel="noopener noreferrer">
@@ -297,5 +357,49 @@
       </div>
       
     </body>
+    <script>
+      
+      function generateRandomCharacter() {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; 
+        return characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    
+      
+      function updateRandomCharacters(text, changes = 3) {
+        const textArray = text.split('');
+        for (let i = 0; i < changes; i++) {
+          const randomIndex = Math.floor(Math.random() * textArray.length);
+          textArray[randomIndex] = generateRandomCharacter();
+        }
+        return textArray.join('');
+      }
+    
+     
+      function startHackerEffect() {
+        const title = document.getElementById("title");
+        const description = document.getElementById("description");
+    
+        
+        let currentTitle = generateRandomCharacter().repeat(6); 
+        let currentDescription = generateRandomCharacter().repeat(20); 
+    
+       
+        setInterval(() => {
+          currentTitle = updateRandomCharacters(currentTitle, 2); 
+          title.textContent = currentTitle;
+        }, 200);
+    
+        
+        setInterval(() => {
+          currentDescription = updateRandomCharacters(currentDescription, 4);
+          description.textContent = currentDescription;
+        }, 250);
+      }
+    
+      
+      window.onload = function() {
+        startHackerEffect();
+      };
+    </script>
     
   </html>
