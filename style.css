@@ -121,4 +121,6 @@ button:hover {
     display: block;
   }
 }
-
+@media not all and (min-resolution: 0.001dpcm) {
+ 
+}
