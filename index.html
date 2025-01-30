@@ -1,9 +1,80 @@
   <html>
     <head>
       <style>
-       
+        /* Estilos personalizados */
         body {
-          cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%2376CFFF" stroke="%23000000" stroke-width="1.5"></circle></svg>'), auto; /* Cambia 'img/cursor.png' por la ruta de tu imagen */
+          cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%2376CFFF" stroke="%23000000" stroke-width="1.5"></circle></svg>'), auto;
+        }
+    
+        .hero-section {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/sobremi.gif");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+    
+        .mobile-nav {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.95);
+          padding: 2rem;
+          z-index: 999;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 2rem;
+        }
+    
+        .mobile-nav.active {
+          display: flex;
+        }
+    
+        .hamburger-menu {
+          display: none;
+          cursor: pointer;
+          z-index: 1000;
+          background: none;
+          border: none;
+          padding: 0.5rem;
+        }
+    
+        .hamburger-menu span {
+          display: block;
+          width: 25px;
+          height: 3px;
+          background-color: #fff;
+          margin: 5px 0;
+          transition: all 0.3s ease;
+        }
+    
+        .hamburger-menu.active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+    
+        .hamburger-menu.active span:nth-child(2) {
+          opacity: 0;
+        }
+    
+        .hamburger-menu.active span:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+    
+        @media screen and (max-width: 1024px) {
+          #desktop-nav {
+            display: none;
+          }
+    
+          .hamburger-menu {
+            display: block;
+          }
+        }
+    
+        .no-scroll {
+          overflow: hidden;
         }
       </style>
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -73,6 +144,7 @@
               <div class="@container">
                 <div class="@[480px]:p-4">
                   <div
+                  loading="lazy"
                     class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
                     style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/sobremi.gif");'
                   >
