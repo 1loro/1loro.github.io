@@ -124,3 +124,13 @@ button:hover {
 @media not all and (min-resolution: 0.001dpcm) {
  
 }
+/* Estilos base del logo */
+.size-10 .logo {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.size-10:hover .logo {
+  transform: scale(1.1); /* Zoom del 10% */
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Resplandor neon blanco */
+}
