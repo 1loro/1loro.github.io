@@ -13,6 +13,31 @@
         body {
           cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%2376CFFF" stroke="%23000000" stroke-width="1.5"></circle></svg>'), auto;
         }
+        .typing-effect {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: .15em solid #00aaff;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 11ch; }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: #00aaff; }
+      }
+
+      .linkedin-button {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .linkedin-button:hover {
+        transform: scale(1.15);
+      }
     
         .hero-section {
           background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("img/sobremi.gif");
